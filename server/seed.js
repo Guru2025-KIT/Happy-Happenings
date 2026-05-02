@@ -170,7 +170,89 @@ async function seed() {
       ticketTiers: [{ name: 'Workshop Seat', price: 2999, totalSeats: 20, availableSeats: 9, perks: 'All materials + sample packs + certificate' }],
       isFeatured: false, isFree: false, ageLimit: 'All Ages', tags: ['workshop','production','ableton'], status: 'upcoming', createdBy: admin._id,
     },
-  ]);
+    {
+      title: 'Sunburn Arena — DJ Chetas Night Mumbai',
+      description: 'Sunburn Arena lit up Mumbai with DJ Chetas delivering a high-energy Bollywood EDM set. Stunning visuals, laser lights, and a packed crowd made it an unforgettable night.',
+      category: 'DJ Night',
+      artist: djchetas._id,
+      venue: {
+        name: 'NSCI Dome',
+        city: 'Mumbai',
+        address: 'Worli, Mumbai, Maharashtra 400018'
+      },
+      date: new Date('2025-03-15'), // before April 1
+      time: '7:00 PM',
+      endTime: '11:30 PM',
+      image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=900&q=80',
+      ticketTiers: [
+        { name: 'Early Bird',     price: 499,   totalSeats: 400,  availableSeats: 0, perks: 'Sold out early access tickets' },
+        { name: 'General',        price: 999,   totalSeats: 2500, availableSeats: 0, perks: 'General standing' },
+        { name: 'VIP Zone',       price: 2999,  totalSeats: 150,  availableSeats: 0, perks: 'VIP area + drinks' },
+        { name: 'Platinum Table', price: 10999, totalSeats: 25,   availableSeats: 0, perks: 'Table for 4 + premium service' },
+      ],
+      isFeatured: false,
+      isFree: false,
+      ageLimit: '18+',
+      dressCode: 'Party Wear',
+      tags: ['dj','bollywood','edm'],
+      status: 'completed',
+      createdBy: admin._id,
+  },
+  {
+    title: 'Bollywood Beats — DJ Suketu Live Pune',
+    description: 'DJ Suketu brought classic Bollywood remixes and dance hits to Pune. A night full of nostalgia, high-energy drops, and a packed dance floor.',
+    category: 'DJ Night',
+    artist: djsuketu._id,
+    venue: {
+      name: 'Royal Orchid Grounds',
+      city: 'Pune',
+      address: 'Balewadi High Street, Pune, Maharashtra 411045'
+    },
+    date: new Date('2025-02-22'),
+    time: '7:30 PM',
+    endTime: '11:00 PM',
+    image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=900&q=80',
+    ticketTiers: [
+      { name: 'Early Bird', price: 399, totalSeats: 300, availableSeats: 0, perks: 'Limited early bird entry' },
+      { name: 'General', price: 899, totalSeats: 2000, availableSeats: 0, perks: 'General standing' },
+      { name: 'VIP', price: 2499, totalSeats: 120, availableSeats: 0, perks: 'VIP lounge + drinks' },
+    ],
+    isFeatured: false,
+    isFree: false,
+    ageLimit: '18+',
+    dressCode: 'Casual Party',
+    tags: ['dj','bollywood','party'],
+    status: 'completed',
+    createdBy: admin._id,
+  },
+  {
+    title: 'EDM Madness — DJ NYK Live Bangalore',
+    description: 'DJ NYK turned Bangalore into an EDM festival with electrifying beats, immersive visuals, and a high-voltage crowd experience.',
+    category: 'DJ Night',
+    artist: djnyk._id,
+    venue: {
+      name: 'Pebble The Jungle Lounge',
+      city: 'Bangalore',
+      address: 'Palace Grounds, Bengaluru, Karnataka 560052'
+    },
+    date: new Date('2025-03-10'),
+    time: '8:00 PM',
+    endTime: '12:00 AM',
+    image: 'https://images.unsplash.com/photo-1506157786151-b8491531f063?w=900&q=80',
+    ticketTiers: [
+      { name: 'Early Bird', price: 499, totalSeats: 350, availableSeats: 0, perks: 'Discounted entry' },
+      { name: 'General', price: 1099, totalSeats: 2200, availableSeats: 0, perks: 'Standing access' },
+      { name: 'VIP Zone', price: 2999, totalSeats: 150, availableSeats: 0, perks: 'VIP seating + bar access' },
+    ],
+    isFeatured: false,
+    isFree: false,
+    ageLimit: '18+',
+    dressCode: 'Smart Casual',
+    tags: ['edm','dj','live'],
+    status: 'completed',
+    createdBy: admin._id,
+  },
+ ]);
   console.log('🎪 Events seeded');
 
   // ── Sample bookings ─────────────────────────────────────────────────────
