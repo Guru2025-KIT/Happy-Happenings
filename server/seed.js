@@ -31,13 +31,15 @@ async function seed() {
   console.log('👥 Users seeded');
 
   // ── Artists ──────────────────────────────────────────────────────────────
-  const [nucleya, divine, prateek, djchetas, ritviz, seedheMaut] = await Artist.insertMany([
+  const [nucleya, divine, prateek, djchetas, ritviz, seedheMaut, djsuketu, djnyk] = await Artist.insertMany([
     { name: 'Nucleya',      genre: 'Electronic', bio: 'Bass Raja of India. Udyan Sagar\'s earth-shaking bass music blends Indian folk with electronic beats — one of India\'s most iconic festival headliners.', image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&q=80', socialLinks: { instagram: 'https://instagram.com/nucleya', spotify: 'https://open.spotify.com' } },
     { name: 'Divine',       genre: 'Hip-Hop',    bio: 'Vivian Fernandes — the voice of Mumbai\'s streets. His raw, authentic rap about life in Kurla changed Indian hip-hop forever.', image: 'https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=600&q=80', socialLinks: { instagram: 'https://instagram.com/divine' } },
     { name: 'Prateek Kuhad',genre: 'Indie',      bio: 'Jaipur\'s acoustic poet. Prateek blends Hindi and English in hauntingly beautiful indie folk songs that speak straight to the heart.', image: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&q=80', socialLinks: { instagram: 'https://instagram.com/prateekkuhad', spotify: 'https://open.spotify.com' } },
     { name: 'DJ Chetas',    genre: 'Electronic', bio: 'Bollywood\'s most loved DJ. DJ Chetas turns every dancefloor into a Bollywood anthem experience with his signature remixes and live energy.', image: 'https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=600&q=80', socialLinks: { instagram: 'https://instagram.com/djchetas' } },
     { name: 'Ritviz',       genre: 'Electronic', bio: 'A classically trained musician turned electronic producer — Ritviz fuses Hindustani classical with contemporary beats. Pure magic.', image: 'https://images.unsplash.com/photo-1571330735066-03aaa9429d89?w=600&q=80', socialLinks: { instagram: 'https://instagram.com/ritviz', spotify: 'https://open.spotify.com' } },
     { name: 'Seedhe Maut',  genre: 'Hip-Hop',    bio: 'Delhi\'s finest rap duo — Encore ABJ and Calm. Redefining Indian rap with razor-sharp lyrics and a unique underground sound.', image: 'https://images.unsplash.com/photo-1520872024865-3ff2805d8bb3?w=600&q=80', socialLinks: { instagram: 'https://instagram.com/seedhemaut' } },
+    { name: 'DJ Suketu',    genre: 'Electronic', bio: 'Legendary DJ known for classic Bollywood remixes.', image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=600&q=80', socialLinks: {} },
+    { name: 'DJ NYK',       genre: 'Electronic', bio: 'India\'s No.1 Bollywood DJ and King of Remixes.', image: 'https://images.unsplash.com/photo-1506157786151-b8491531f063?w=600&q=80', socialLinks: {} }
   ]);
   console.log('🎤 Artists seeded');
 
